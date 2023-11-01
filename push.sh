@@ -1,10 +1,8 @@
 #!/bin/bash
 
 git add .
-echo "Comment: "
-read str
+read -p "Comment: " str
 git commit -m $str
-echo "Branch: "
-read branch
+read -p "Branch: " branch
 git push origin $branch
 
